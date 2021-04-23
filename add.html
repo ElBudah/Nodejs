@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/add.css">
+        <title>
+            Add a new item
+        </title>
+    </head>
+    <body>
+        <div class="main">
+            <h2>Welcome to Destination Server Management System</h2>
+        </div>
+        <div class="inputs">
+            <form action="/add" method="POST">
+                <p>
+                    <input class="input" name="new_name" placeholder="Type the new country" required autocomplete="off">
+                </p>
+                <p>
+                    <input class="input" name="new_distance" placeholder="Type the new distance" required autocomplete="off">
+                </p>
+                <p>
+                    <input class="input" name="new_cost" placeholder="Type the new cost" required autocomplete="off">
+                </p>
+                <p>
+                    <button class="input" type="submit">Press to Add</button>
+                </p>
+            </form>
+            <form action="/show" method="POST">
+                <input class="input" type="submit" value="See Full DataBase">
+            </form>
+            <p>
+                <form action="/deleteview" method="GET">
+                    <input class="input" type="submit" value="Delete Page">
+                </form>
+            </p>
+            <form action="/" method="GET">
+                <input class="input" type="submit" value="Return">
+            </form>
+        </div>
+        
+    </body>
+</html>
