@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/delete.css">
+        <title>Delete Page</title>
+    </head>
+    <body>
+        <div class="title">
+            <h2>You are at Delete Session </h2>
+        </div>
+        <div class="title2">
+            <h2> Please enter the country's name you wish to delete</h2>
+        </div>
+           
+       
+        <div class="inputs">
+            <form action="/delete" method="POST">
+                <input  placeholder="Type Country's Name" name="country" required autocomplete="off">
+                <p>
+                    <input class="input"  type="submit" value="Submit">
+                </p>
+            </form>
+            <p>
+                <form action="/addview" method="GET">
+                    <input type="submit" value="Add Page" >
+                </form>
+            </p>
+            <p>
+                <form action="/" method="GET">
+                    <input class="input" type="submit" value="Home">
+                </form>
+            </p>
+        </div>
+    </body>
+</html>
